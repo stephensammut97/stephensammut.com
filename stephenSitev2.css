@@ -17,6 +17,8 @@ h2 {
     font-weight: 700;
 
 }
+
+
 .container-7{
       display: flex;
     overflow: hidden;
@@ -173,6 +175,8 @@ nav a {
   margin-bottom: 10px;
 }
 
+
+
 .case-study-container a {
   display: block;
   color: #000;
@@ -190,6 +194,10 @@ nav a {
   display: grid;
   grid-template-rows: 1fr 1fr;
   gap: 5px;
+}
+
+.case-study-container.gifting-wireframe{
+  padding:100px;
 }
 
 .case-study-text {
@@ -316,6 +324,11 @@ nav a {
 }
 
 @media (max-width: 600px) {
+
+  .case-study-container.gifting-wireframe {
+    padding: 0;
+  }
+
   .intro-copy.case-study-intro.new-row {
     width: 100%;
     padding: 2%;
