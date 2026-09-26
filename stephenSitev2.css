@@ -17,6 +17,17 @@ h2 {
     font-weight: 700;
 
 }
+.container-7{
+      display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    max-width: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+}
 
 .relative-flex-screen {
     display: flex;
