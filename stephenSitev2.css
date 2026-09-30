@@ -270,6 +270,10 @@ nav a {
 
 @media (max-width: 768px) {
 
+  .webpage{
+    padding:5px;
+  }
+
   .grid-container-2.column-layout {
 
     width: 100%;
