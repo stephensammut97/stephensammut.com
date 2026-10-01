@@ -18,6 +18,12 @@ h2 {
 
 }
 
+.test-image{
+  width: 100%;
+}
+.test-image img{
+  position: absolute;
+}
 
 .container-7{
       display: flex;
@@ -235,6 +241,69 @@ nav a {
   padding: 5%;
 }
 
+/* ================================
+   CAMPAIGN IMPACT
+================================ */
+
+.campaign-impact {
+    width: 100%;
+    margin: 90px 20px 110px;
+}
+
+.campaign-impact__line {
+    width: 100%;
+    height: 1px;
+    background: #d8d8d8;
+    margin-bottom: 55px;
+}
+
+.campaign-impact__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.campaign-impact__stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.campaign-impact__eyebrow {
+    font-size: 11px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 18px;
+}
+
+.campaign-impact__number {
+    font-size: clamp(70px, 8vw, 120px);
+    line-height: 0.85;
+    font-weight: 400;
+    letter-spacing: -0.06em;
+    margin-bottom: 20px;
+}
+
+.campaign-impact__label {
+    font-size: 11px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+
+.campaign-impact__description {
+    max-width: 430px;
+    border-left: 1px solid #d8d8d8;
+    padding-left: 45px;
+}
+
+.campaign-impact__description p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.45;
+}
+
 
 
 @media (min-width: 1024px) {
@@ -325,6 +394,36 @@ nav a {
   nav.open {
     transform: translateX(0);
   }
+
+
+    .campaign-impact {
+        margin: 65px 10px 75px;
+    }
+
+    .campaign-impact__line {
+        margin-bottom: 40px;
+    }
+
+    .campaign-impact__content {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .campaign-impact__number {
+        font-size: clamp(70px, 22vw, 110px);
+    }
+
+    .campaign-impact__description {
+        max-width: 100%;
+        border-left: none;
+        border-top: 1px solid #d8d8d8;
+        padding-left: 0;
+        padding-top: 25px;
+    }
+
+    .campaign-impact__description p {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 600px) {
