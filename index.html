@@ -16,14 +16,16 @@
   <body>
     <div class="webpage">
       <header class="top-homepage">
+       
         <div class="logo">Stephen Sammut</div>
 
         <button class="menu-toggle" id="menuToggle">☰</button>
 
         <nav id="mobileMenu">
-         <!-- <a href="#">Work</a>
+          <a href="#work">Work</a>
           <a href="#">About</a>
-          <a href="#">Contact</a> -->
+          <a href="#">Contact</a>
+          <a href="#div_id">Personal Projects</a>
         </nav>
       </header>
 
@@ -38,7 +40,7 @@
 
         </div>
       </div>
- <div class="intro-copy" style="padding-bottom: 10px; padding-left: 10px;">
+ <div class="intro-copy" style="padding-bottom: 10px; padding-left: 10px;" id="work">
             <p>
               ● SELECTED WORKS
 
@@ -142,6 +144,49 @@
          
         </div>
       </main>
+
+      <!-- Personal Work Section -->
+      <section class="personal-work-container">
+        <div class="intro-copy" style="padding-bottom: 10px; padding-left: 10px;">
+            <p>
+              ● SELF INITIATED WORK  | UX CASE STUDIES
+
+            </p>
+          </div>
+          <div class="grid-container">
+        <div class="grid-container-2">
+          <div class="intro-copy personal-work-copy">
+            <p>
+             Self-initiated projects exploring UX, product thinking and UI, with a focus on creating clear and considered digital experiences.
+
+            </p>
+          </div>
+
+        </div>
+      </div>
+        <main class="grid-container">
+        <div class="grid-container-2">
+            <div class="case-study-container">
+            <a href="spotlight.html">
+              <img src="imgs/ProjectCard_9_Spotlight_.png" alt="" />
+            </a>
+            <div class="project-copy-content" id="div_id">
+              <div class="project-name">SPOTLIGHT CINEMA<br>TICKETING & REWARDS APP</div>
+              <div class="project-name-span">UX/UI</div>
+            </div>
+          </div>
+           <div class="case-study-container">
+            <a href="emaildesign.html">
+              <img src="imgs/ProjectCard_10_Companion.png" alt="" />
+            </a>
+            <div class="project-copy-content">
+              <div class="project-name">MY COMPANION APP</div>
+              <div class="project-name-span">UX/UI</div>
+            </div>
+          </div>
+        </div>
+      </main>
+      </section>
     </div>
     <script src="script.js"></script>
    
