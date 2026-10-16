@@ -1,119 +1,592 @@
-<!DOCTYPE html>
-<html lang="en">
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-<head>
-  <meta charset="UTF-8">
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+h2 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-bottom: 10px;
+     font-family: "Suisse Intl", sans-serif;
+    font-weight: 700;
 
-  <meta name="description"
-    content="Stephen Sammut is a digital designer specialising in campaign-led UI and e-commerce experiences.">
+}
 
-  <meta name="author" content="Stephen Sammut">
+.heading-container{
+  padding:20px 0;
+}
+.heading-container h2{
+  font-size: 3rem;
+  line-height: 2.5rem;
+  margin-bottom: 10px;
+     font-family: "Suisse Intl", sans-serif;
+    font-weight: 400;
 
-  <link rel="stylesheet" href="stephenSitev2.css">
+}
+.test-image{
+  width: 100%;
+}
+.test-image img{
+  position: absolute;
+}
+
+.container-7{
+      display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    max-width: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+}
 
 
-  <title>Stephen Sammut | Digital Designer</title>
-</head>
 
-<body>
-  <div class="webpage">
-    <header class="top-homepage">
+.webpage {
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+}
 
-      <a href="index.html">
-        <div class="logo">
-          Stephen Sammut
-        </div>
-      </a>
+.intro-copy.case-study-intro.less-width{
+  max-width: 400px;
+}
 
-      <button class="menu-toggle" id="menuToggle">
-        ☰
-      </button>
+/* CASE STUDY LINK */
 
-      <nav id="mobileMenu">
-        <a href="#">Work</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </nav>
+.case-study-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+  transition: gap 0.3s ease;
+  padding-top: 10px;
+}
 
-    </header>
+.case-study-link .arrow {
+  font-size: 20px;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
 
-    <div class="top-homepage new-row">
-            <div class="grid-container">
-                <div class="grid-container-2 column-layout">
-                    <div class="intro-copy case-study-intro">
-                        <p>As part of the run up to Christmas, our team developed the home of Christmas campaign which
-                            was split
-                            into three phases. The first phase was the early bird phase which was for the shoppers who
-                            wanted to get their Christmas shopping done early. The second phase was the gifting phase
-                            which was for the shoppers who wanted to give gifts to their loved ones. The third phase was
-                            the final phase which was for the shoppers who wanted to complete their Christmas shopping
-                            before the holidays.</p>
-                    </div>
-                    <div class="project-copy-content">
-                        <div class="project-name-span">MY ROLE: WEB DESIGN/DEVELOPMENT | DIGITAL DESIGN</div>
-                        <div class="project-name-span">ADOBE XD | HTML/CSS </div>
-                    </div>
-                    <div class="copy-stacked">
-                        <div class="project-name-span">YEAR : 2026 - PRESENT</div>
-                        <div class="project-name-span">TEAM & CAMPAIGN CREATIVE DIRECTION : MYSELF · TODD · FI · KIM ·
-                            KASCIA ·ANNABELLE</div>
-                        <div class="project-name-span">FILMING / MOTION : TODD DUNCAN</div>
-                        <div class="project-name-span">PHOTOGRAPHY : ANNABELLE</div>
-                        <div class="project-name-span">COPYWRITER : MAISIE TURNER </div>
-                    </div>
-                </div>
-            </div>
-    </div>
-    <!-- Your case study content goes here -->
+.case-study-link:hover {
+  gap: 12px;
+}
 
-    <main class="grid-container">
-      <div class="grid-container-2 two-column-layout">
-        <div class="case-study-container">
-          <img src="imgs/xmas/Static_with_lockup_.jpg" loading="lazy" alt="">
-        </div>
-        <div class="case-study-container">
-          <img src="imgs/xmas/iPhone_Mockup_3_Gifting.jpg" loading="lazy" alt="">
-        </div>
-      </div>
-      <div class="intro-copy case-study-intro new-row">
-        <p>These initial concepts were what I developed to present to stakeholders with the proposed look and feel for the Christmas campaign landing page across the Freemans and Kaleidoscope websites. The designs explored how the campaign typography guidelines, photography and visual styling could come together to create a cohesive festive experience, while ensuring key commercial messaging remained prominent. This included giving the credit banner clear visibility within the page, recognising its importance in communicating a key customer proposition. The approved direction then provided a visual foundation for the wider Christmas campaign and onsite updates.</p>
-      </div>
-      <div class="case-study-container gifting-wireframe">
-                    <img src="imgs/xmas/Gifting_LP_concept_.png" loading="lazy" alt="" >
-                </div>
-                
-      <div class="grid-container-2 two-column-layout">
-        <div class="case-study-container">
-          <img src="imgs/xmas/iPhone_Mockup_phase2.jpg" loading="lazy" alt="">
-        </div>
-        <div class="case-study-container">
-          <img src="imgs/xmas/desktop_Mockup_phase2.jpg" loading="lazy" alt="">
-        </div>
-        
-      </div>
-      <div class="grid-container-2 two-column-layout">
-        <div class="intro-copy case-study-intro new-row">
-                    <h2>PHASE 2</h2>
-                       <p> For Phase 2 of the Christmas campaign, we wanted to bring our key customer propositions to the forefront across our digital channels. One of the key messages was our flexible credit options, giving customers the ability to spread the cost of their purchases over a period of time. The challenge was to communicate this clearly within the wider Christmas creative, while keeping the experience visually engaging and easy to understand.</p>
-                    
-                </div>
-        <div class="case-study-container">
-          <img src="imgs/xmas/Competition_brief_mockup_xmas.png" loading="lazy" alt="">
-        </div>
-      </div>
-     <div class="grid-container-2 two-column-layout">
-        <div class="case-study-container">
-          <img src="imgs/xmas/Onsite_banners_mockup.jpg" loading="lazy" alt="">
-        </div>
-        <div class="case-study-container">
-          <img src="imgs/xmas/email_christmas_mockup.jpg" loading="lazy" alt="">
-        </div>
-      </div>
-  </main>
-  </div>
-  <script src="script.js"></script>
-</body>
+.case-study-link:hover .arrow {
+  transform: translate(2px, -2px);
+}
 
-</html>
+
+/* -------------------------
+   HEADER
+------------------------- */
+
+.top-homepage {
+  width: 100%;
+  height: 320px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  padding: 10px;
+}
+
+.top-homepage.new-row {
+  padding: 0px 10px 40px;
+  height: 100%;
+}
+
+.logo {
+  font-size: 16px;
+}
+
+nav {
+  display: flex;
+  gap: 60px;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* -------------------------
+   PROJECT GRID
+------------------------- */
+
+.grid-container {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+
+.grid-container-2.column-layout {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+}
+
+.grid-container-2.two-column-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* -------------------------
+   PROJECT
+------------------------- */
+.banner-image-container{
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+ 
+}
+
+.banner-image-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 0 20vw;
+}
+
+.one-col-layout {
+  display: flex;
+  flex-direction: column;
+  width: 71%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.case-study-container {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+
+.case-study-container a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+
+.case-study-container img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.case-study-container.two-rows {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+}
+
+.case-study-container.gifting-wireframe{
+  padding:100px;
+}
+
+.case-study-text {
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.project-name {
+  padding-top: 10px;
+  font-size: 12px;
+}
+
+.project-name-span {
+  padding-top: 10px;
+  font-size: 10px;
+  color: #656565;
+}
+
+.project-copy-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro-copy {
+  padding-bottom: 100px;
+  font-size: 14px;
+}
+
+.intro-copy.case-study-intro {
+  padding-bottom: 0px;
+}
+
+.intro-copy.case-study-intro.new-row {
+  width: 40vw;
+  padding: 5%;
+}
+
+/* ================================
+   CAMPAIGN IMPACT
+================================ */
+
+.campaign-impact {
+    width: 100%;
+    margin: 90px 20px 110px;
+}
+.campaign-impact.christmas {
+    margin: 90px 20px 50px;
+}
+
+.campaign-impact__line {
+    width: 100%;
+    height: 1px;
+    background: #d8d8d8;
+    margin-bottom: 55px;
+}
+
+.campaign-impact__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.campaign-impact__stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.campaign-impact__eyebrow {
+    font-size: 11px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 18px;
+}
+
+.campaign-impact__number {
+    font-size: clamp(70px, 8vw, 120px);
+    line-height: 0.85;
+    font-weight: 400;
+    letter-spacing: -0.06em;
+    margin-bottom: 20px;
+}
+
+.christmas-font-size {
+    font-size: clamp(3rem, 5vw, 80px);
+    line-height: 0.85;
+    font-weight: 400;
+    letter-spacing: -0.06em;
+    margin-bottom: 20px;
+}
+
+.campaign-impact__label {
+    font-size: 11px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+
+.campaign-impact__description {
+    max-width: 430px;
+    border-left: 1px solid #d8d8d8;
+    padding-left: 45px;
+}
+
+.campaign-impact__description p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.45;
+}
+
+.personal-work-container {
+  width: 100%;
+  height: auto;
+  padding-top: 10%;
+ 
+}
+
+.intro-copy.personal-work-copy{
+  padding-bottom: 40px;
+}
+
+
+.relative-flex-phone.home {
+    top: 81px;
+    position: relative
+}
+
+.relative-flex-phone.rewards {
+    top: 126px;
+    position: relative
+}
+
+.relative-flex-screen {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    transition: transform 0.5s ease;
+    position: relative;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    justify-content: center;
+    align-items: center;
+    gap: 21px;
+    aspect-ratio: auto;
+    background-color: var(--white);
+    overflow-y: hidden;
+  }
+  
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+@media (min-width: 1024px) {
+  a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  a:hover::after {
+    transform: scaleX(1);
+  }
+}
+
+@media (max-width: 1080px) {
+  .project-copy-content {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .relative-flex-phone.home {
+    top: 0;
+   
+}
+
+.relative-flex-phone.rewards {
+    top: 0;
+}
+
+  .webpage{
+    padding:5px;
+  }
+
+  .grid-container-2.column-layout {
+
+    width: 100%;
+  }
+
+  .intro-copy.case-study-intro.new-row {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .grid-container-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: relative;
+    z-index: 10;
+    border: none;
+    background: none;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    width: 7vw;
+    height: 100vh;
+    box-shadow: -8px 0 30px rgba(0, 0, 0, 0.08);
+
+    background: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 80px;
+
+    transform: translateX(100%);
+
+    transition: transform 0.7s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+
+  nav.open {
+    transform: translateX(0);
+  }
+
+
+    .campaign-impact {
+        margin: 65px 10px 75px;
+    }
+
+    .campaign-impact__line {
+        margin-bottom: 40px;
+    }
+
+    .campaign-impact__content {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .campaign-impact__number {
+        font-size: clamp(70px, 22vw, 110px);
+    }
+
+    .campaign-impact__description {
+        max-width: 100%;
+        border-left: none;
+        border-top: 1px solid #d8d8d8;
+        padding-left: 0;
+        padding-top: 25px;
+    }
+
+    .campaign-impact__description p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+
+  .banner-image-container img{
+  padding: 0 10px;
+}
+
+  .case-study-container.gifting-wireframe {
+    padding: 0;
+  }
+
+  .intro-copy.case-study-intro.new-row {
+    width: 100%;
+    padding: 2%;
+    padding-bottom: 6%;
+  }
+
+  .grid-container {
+    padding-bottom: 5%;
+  }
+
+  .grid-container-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .top-homepage {
+    height: 230px;
+  }
+
+  .grid-container-2.two-column-layout {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-container-2.column-layout {
+    width: 100%;
+  }
+
+  .top-homepage.new-row {
+    padding: 0;
+  }
+
+  .case-study-container {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 462px) {
+
+  .one-col-layout {
+    width: 100%;
+    position: absolute;
+    top: 137%;
+    left: 0%;
+  }
+
+  .padding {
+    padding: 10px;
+  }
+
+  .project-copy-content {
+    display: block;
+  }
+
+  .intro-copy.case-study-intro {
+    padding-bottom: 10px;
+    font-size: 0.889rem;
+    line-height: 1.1rem;
+  }
+
+  .case-study-container {
+    padding-bottom: 5%;
+  }
+
+  .project-name-span {
+    padding-top: 5px;
+  }
+
+  .intro-copy.case-study-intro.new-row {
+    font-size: 0.7rem;
+    line-height: 1.1rem;
+  }
+}
+
+
+/*navigation bar for case studies */
