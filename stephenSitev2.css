@@ -18,6 +18,17 @@ h2 {
 
 }
 
+.heading-container{
+  padding:20px 0;
+}
+.heading-container h2{
+  font-size: 3rem;
+  line-height: 2.5rem;
+  margin-bottom: 10px;
+     font-family: "Suisse Intl", sans-serif;
+    font-weight: 400;
+
+}
 .test-image{
   width: 100%;
 }
@@ -154,6 +165,19 @@ nav a {
 /* -------------------------
    PROJECT
 ------------------------- */
+.banner-image-container{
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+ 
+}
+
+.banner-image-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 0 20vw;
+}
 
 .one-col-layout {
   display: flex;
@@ -236,6 +260,9 @@ nav a {
     width: 100%;
     margin: 90px 20px 110px;
 }
+.campaign-impact.christmas {
+    margin: 90px 20px 50px;
+}
 
 .campaign-impact__line {
     width: 100%;
@@ -266,6 +293,14 @@ nav a {
 
 .campaign-impact__number {
     font-size: clamp(70px, 8vw, 120px);
+    line-height: 0.85;
+    font-weight: 400;
+    letter-spacing: -0.06em;
+    margin-bottom: 20px;
+}
+
+.christmas-font-size {
+    font-size: clamp(3rem, 5vw, 80px);
     line-height: 0.85;
     font-weight: 400;
     letter-spacing: -0.06em;
@@ -332,6 +367,7 @@ nav a {
     background-color: var(--white);
     overflow-y: hidden;
   }
+  
 
   .center {
     display: flex;
@@ -470,6 +506,10 @@ nav a {
 
 @media (max-width: 600px) {
 
+  .banner-image-container img{
+  padding: 0 10px;
+}
+
   .case-study-container.gifting-wireframe {
     padding: 0;
   }
@@ -547,3 +587,6 @@ nav a {
     line-height: 1.1rem;
   }
 }
+
+
+/*navigation bar for case studies */
