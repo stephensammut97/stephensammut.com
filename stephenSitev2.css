@@ -156,6 +156,13 @@ nav a {
   width: 100%;
 }
 
+grid-container-2 five-column-layout {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+
 .video {
   width: 100%;
   height: auto;
